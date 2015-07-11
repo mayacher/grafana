@@ -19,6 +19,7 @@ RUN cd /root && wget https://grafanarel.s3.amazonaws.com/builds/grafana_2.0.2_am
 
 
 COPY conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY conf/grafana.ini /etc/grafana/grafana.ini
 
 
 EXPOSE 9001 80 5432
